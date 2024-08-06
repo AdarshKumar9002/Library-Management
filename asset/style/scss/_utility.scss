@@ -1,0 +1,10 @@
+h2{
+    font-size: var(--font-size-xxl);
+}
+
+
+@media screen and (min-width: 720px) {
+    h2 {
+        font-size: var(--font-size-4rem);
+    }
+}

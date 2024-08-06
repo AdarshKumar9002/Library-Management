@@ -1,0 +1,167 @@
+.layout-container {
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
+.main-home {
+  height: calc(100dvh - 3.5em - 3em);
+}
+.banner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .banner__img {
+    width: 250px;
+    height: auto;
+    img {
+      width: 100%;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  .banner__text {
+    text-align: center;
+    p {
+      font-size: var(--font-size-m);
+      margin-bottom: 0.5em;
+    }
+  }
+}
+.banner > :last-child {
+  margin-top: 1em;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.8em;
+  }
+  a {
+    font-size: var(--font-size-s);
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+      color: blueviolet;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3em;
+
+  > div {
+    display: none;
+    font-size: var(--font-size-l);
+  }
+
+  .footer-nav {
+    ul {
+      display: flex;
+      gap: 1em;
+      font-weight: 600;
+      a {
+        font-size: var(--font-size-s);
+        &:hover {
+          text-decoration: underline;
+          color: blueviolet;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .banner {
+    .banner__img {
+      img {
+        aspect-ratio: 1/1;
+      }
+    }
+
+    .banner__text {
+      p {
+        font-size: var(--font-size-m);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .banner {
+    .banner__img {
+      img {
+        aspect-ratio: 1/1;
+      }
+    }
+
+    .banner__text {
+      p {
+        font-size: var(--font-size-l);
+        margin-bottom: 0.6em;
+      }
+    }
+  }
+
+  .banner > :last-child {
+    ul {
+      a {
+        font-size: var(--font-size-m);
+      }
+    }
+  }
+}
+@media screen and (max-height: 500px) {
+  .banner {
+    .banner__img {
+      display: none;
+    }
+
+    .banner__text {
+      p {
+        font-size: var(--font-size-l);
+      }
+    }
+  }
+
+  .banner > :last-child {
+    ul {
+      a {
+        font-size: var(--font-size-l);
+        color: var(--font-color-secondry);
+      }
+    }
+  }
+  footer {
+    .footer-nav {
+      ul {
+        a {
+          color: var(--font-color-secondry);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    .banner > :last-child {
+      ul {
+        a {
+          font-size: var(--font-size-xl);
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    main {
+      width: 1200px;
+      margin: auto;
+    }
+  }
+}

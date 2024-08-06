@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="asset/style/css/icons-style.css" />
+    <link rel="stylesheet" href="asset/style/css/main.css" />
+  </head>
+  <body>
+    <div class="layout-container">
+      <header>
+        <h1>
+          <a href="/">LMS</a>
+        </h1>
+        <button class="menu-icon-open" aria-label="Menu button"></button>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+              <button id="open-book-list" aria-haspopup="true">Books</button>
+              <ul class="book-list">
+                <li><a href="#">Book1</a></li>
+                <li><a href="#">Book2</a></li>
+                <li><a href="#">Book3</a></li>
+                <li><a href="#">Book4</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Issue Book</a></li>
+            <li><a href="#">Over Due</a></li>
+            <li style="display: none;"><a href="#">Users</a></li>
+          </ul>
+        </nav>
+
+        <button class="user-auth-icon"></button>
+      </header>
+      <main class="main-home">
+        <section class="banner">
+          <div class="banner__img">
+            <img src="asset/img/background-library-man.jpeg" alt="" />
+          </div>
+          <div class="banner__text">
+            <h2>Hello <span>User</span></h2>
+            <p>Welcome To LMS</p>
+          </div>
+          <button id="get-started-btn" class="btn-primary">Get Started</button>
+          <nav>
+            <ul>
+              <li><a href="#">Find Book</a></li>
+              <li><a href="#">Request a book</a></li>
+            </ul>
+          </nav>
+        </section>
+      </main>
+
+      <footer>
+        <div>LMS</div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <script src="asset/script/app.js"></script>
+    <script type="module" src="asset/script/icons-toggle.js"></script>
+  </body>
+</html>

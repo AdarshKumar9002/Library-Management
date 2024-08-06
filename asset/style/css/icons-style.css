@@ -1,0 +1,30 @@
+:root {
+  --icon-colors-primary: #fff;
+  --icon-colors-secondry: #000;
+}
+.dark-mode {
+  --icon-colors-primary: #000;
+  --icon-colors-secondry: #fff;
+}
+.svg-common-properties {
+  fill: var(--icon-colors-secondry);
+  width: 25px;
+}
+header [data-visible="true"] .menuAndTheme-icons {
+  fill: var(--icon-colors-secondry);
+}
+.searchIcon-svg{
+  width: 12px;
+}
+.icons-onNav {
+  fill: var(--icon-colors-secondry);
+}
+.socialMedia-icons {
+  fill: var(--icon-colors-secondry);
+}
+@media screen and (max-height: 500px) {
+
+  .svg-common-properties {
+    fill: var(--icon-colors-primary);
+  }
+}

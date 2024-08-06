@@ -1,0 +1,40 @@
+body {
+  color: var(--font-color-primary);
+}
+button {
+  background: transparent;
+  border: none;
+}
+a {
+  color: var(--font-color-primary);
+  text-decoration: none;
+}
+
+.btn-primary {
+  padding: 0.5em 1em;
+  background-color: rgb(84, 84, 228);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: var(--font-size-s);
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: #4f4b4b 2px 2px 8px 4px;
+  }
+}
+
+@media screen and (min-width: 720px) and (min-height: 600px) {
+  .btn-primary {
+    padding: 0.8em 1.5em;
+    font-size: var(--font-size-m);
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .layout-container {
+    background-image: url('asset/img/background-image-library.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--font-color-secondry);
+  }
+}

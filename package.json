@@ -1,0 +1,33 @@
+{
+  "name": "library-management-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "build": "sass --watch asset/style/scss:asset/style/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdarshKumar9002/Library-Management-System.git"
+  },
+  "keywords": [
+    "Library"
+  ],
+  "author": "Adarsh Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdarshKumar9002/Library-Management-System/issues"
+  },
+  "homepage": "https://github.com/AdarshKumar9002/Library-Management-System#readme",
+  "dependencies": {
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.1.1",
+    "sass": "^1.70.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1"
+  }
+}
